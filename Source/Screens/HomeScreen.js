@@ -12,9 +12,9 @@ const HomeScreen = ({ navigation }) => {
 
   useEffect(() => {
     setList(data?.Page?.media)
-    // console.log("==========Gql List======== ", list)
+    console.log("\x1b[33m==========Gql List======== ", list)
     // console.log("==========GqlQurey======== ", JSON.stringify(data))
-  }, [])
+  }, [data])
 
   if (loading) {
     return (
