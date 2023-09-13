@@ -13,7 +13,6 @@ const HomeScreen = ({ navigation }) => {
   useEffect(() => {
     setList(data?.Page?.media)
     console.log("\x1b[33m==========Gql List======== ", list)
-    // console.log("==========GqlQurey======== ", JSON.stringify(data))
   }, [data])
 
   if (loading) {
@@ -57,7 +56,7 @@ const HomeScreen = ({ navigation }) => {
               <View style={styles.mainWrapper}>
 
                 <TouchableOpacity
-                  onPress={() => { navigation.navigate("ArticleDetailScreen",{Article: item}) }}
+                  onPress={() => { navigation.navigate("ArticleDetailScreen", { Article: item }) }}
                   activeOpacity={0.5}
                   style={styles.itemBox}>
                   <ImageBackground
